@@ -1,1 +1,3 @@
-# automated_web_tester
+# Automated Website Tester#
+
+This is the repository for my senior project.
