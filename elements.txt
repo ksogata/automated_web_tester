@@ -1,0 +1,5 @@
+tag=name, Search
+tag=partial link, in the NEWS
+tag=tag name, my account
+tag=class, home
+tag=css selector, hearing
