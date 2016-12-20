@@ -2,6 +2,16 @@
 
 This is the repository for my senior project.
 
+## Usage
+```
+$ python main.py example.com
+```
+
+For additional flags:
+```
+$ python main.py -h
+```
+
 ## Prerequisites
 
 ### Installation
