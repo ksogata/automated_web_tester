@@ -8,27 +8,27 @@ This is the repository for my senior project.
 Install the following dependencies. You may need to install with root access.
 
 * Install Selenium:
-    '''
+    ```
     $ pip install selenium
-    '''
+    ```
 
 * Install Linkchecker
-    '''
+    ```
     $ pip install LinkChecker
-    '''
+    ```
 
 ## Optional Install
 
 * Install PhantomJS (for headless testing)
-    '''
+    ```
     $ npm install phantomjs-prebuilt
-    '''
+    ```
 
 ## LinkChecker
 LinkChecker is a tool that checks for broken links in web sites.
 The original project's Github can be located at: https://github.com/wummel/linkchecker/.
 To run from the command line:
-Execute ''linkchecker http://www.example.com''.
+Execute ``linkchecker http://www.example.com``.
 
 ## Google PageSpeed Insights
 PageSpeed Insights measures the performance of a page for mobile devices and
@@ -60,4 +60,4 @@ weird behavior when clicking on a web element. However, PhantomJS can be run in 
 It is possible to create custom test suites using the Selenium framework. To do so, I have included
 a template file that is used to set up both browser or headless tests. Populate the template file
 with the custom test. Then add the test to "main.py" by adding
-''suite.addTest(ExampleClassName('test_example'))'' to the selenium_test function.
+``suite.addTest(ExampleClassName('test_example'))`` to the selenium_test function.
