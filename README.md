@@ -39,6 +39,12 @@ and a score of 85 or above indicates that the page is performing well.
 Selenium is a suite of tools that is used to automate web browsers. This installation
 is in Python.  
 
+### elements.txt
+This text file contains the words/phrases that want to be found by the user.
+Users can add the 'tag=' to search a tag of that text on the web page. If none is supplied,
+then it will just find all text occurrences on the page.
+The optional tag names are: name, link, partial link, class, tag name, and css selector.
+
 ## Folders in the project
 
 ### Drivers
