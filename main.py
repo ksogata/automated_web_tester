@@ -6,7 +6,8 @@ import urllib
 import json
 from urlparse import urlparse
 from BeautifulSoup import BeautifulSoup
-from selenium import *
+from selenium_tests.selenium_base import *
+from selenium_tests.find_elements_on_page import *
 import argparse
 
 def main():
@@ -31,19 +32,24 @@ def main():
     # if no flags, run all programs
     if (not(args.linkchecker or args.pagespeed
             or args.selenium)):
+
+        print 'Running ALL tests.'
         linkcheck(url)
         query_psi(url)
         selenium_test(url)
     else:
         if (args.linkchecker):
+            print 'Running linkchecker.'
             linkcheck(url)
 
         if (args.pagespeed):
             # query pagespeed insight api
+            print 'Running PageSpeed Insights.'
             query_psi(url)
 
         if (args.selenium):
             # do selenium tests
+	    print 'Running Selenium tests.'
             selenium_test(url)
 
 def linkcheck(url):
