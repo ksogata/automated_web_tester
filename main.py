@@ -16,7 +16,7 @@ def main():
         help='runs linkchecker. DEFAULT runs all.')
     parser.add_argument('--pagespeed', '-p', action='store_true',
         help='runs Google PageSpeed Insights. DEFAULT runs all.')
-    parser.add_argument('--selenium_browser', '-s', action='store_true',
+    parser.add_argument('--selenium', '-s', action='store_true',
         help='runs Selenium browser and headless tests. DEFAULT runs all.')
     #parser.add_argument('--selenium_headless', '-h' action='store_true',
     #    help='runs Selenium headless tests. DEFAULT runs all.')
@@ -30,7 +30,7 @@ def main():
 
     # if no flags, run all programs
     if (not(args.linkchecker or args.pagespeed
-            or args.selenium_browser)):
+            or args.selenium)):
         linkcheck(url)
         query_psi(url)
         selenium_test(url)
